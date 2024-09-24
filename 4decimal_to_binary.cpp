@@ -9,10 +9,11 @@ int main(){
   int i = 0;
   int ans = 0;
 
-  bool isNegative = (num < 0);
-  if (isNegative){
-    num = ~(-num) + 1;
+  bool isNegative = (num < 0); 
+  if (isNegative){ // if number is negative the if statement will be activated
+    num = ~(-num) + 1; // -num converts the negative number as positive and ~ NOT bitwise operator converts the new number into binary
   }
+  
   while (num != 0){
     int bit = num & 1; // lets say our input is 10. the binary will be 1010. 
     // If you know AND operator then know output is only one when both digits are one so whenever num is 1 (for reference in loop it will take number one by one in binary) then bit will be one
